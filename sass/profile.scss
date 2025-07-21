@@ -1,0 +1,35 @@
+.profile {
+    p {
+        color: #777;
+    }
+    .bumper {
+        width: 100%;
+        height: 360px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+    .name {
+        font-weight: bold;
+    }
+    &__image {
+        width: 100%;
+        height: fit-content;
+        margin: 8px 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+}
+
+.mtop-mobile {
+    @media screen and (max-width: 768px) {
+        margin-top: 16px;
+    }
+}
