@@ -2,6 +2,7 @@
 
 $color-primary: #024f01; //#219b76;
 $color-secondary: #7eb09b; //#e8ae00;
+$bg-section: #f1f4f8;
 
 html,
 body {
@@ -25,6 +26,7 @@ body {
 
 section {
     padding: 32px 0;
+    background: $bg-section;
 
     p,
     h1,
