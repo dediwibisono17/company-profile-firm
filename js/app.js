@@ -5,6 +5,13 @@ $('.sliderx').slick({
     fade:true
 });
 
+$('.positive').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows:false,
+    fade:true
+});
+
 
 $(document).ready(function () {
     $('.list-group li a').bind('click', function (e) {
