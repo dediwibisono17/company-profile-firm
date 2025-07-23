@@ -28,6 +28,9 @@
         .rectanglex {
             width: 30%;
             text-align: left;
+            @media screen and (max-width:768px) {
+                width: 90%;
+            }
             &__right {
                 width: 75%;
             }
