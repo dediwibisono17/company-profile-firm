@@ -1,6 +1,15 @@
 footer {
     padding: 32px 0;
     background: white;
+     a {
+        .btn-primary {
+            background: $color-primary !important;
+        }
+        i {
+        color: white !important;    
+        }
+        color: white !important;
+    }
     .footer {
         &__first {
             h2 {
