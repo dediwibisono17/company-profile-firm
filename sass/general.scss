@@ -231,3 +231,16 @@
     }
    
 }
+
+
+.contact {
+    i {
+        font-size: 3rem;
+    }
+    .name {
+        font-size: 1.7rem;
+        @media screen and (max-width:768px) {
+            font-size: 1.1rem;
+        }
+    }
+}
