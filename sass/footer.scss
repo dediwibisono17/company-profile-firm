@@ -5,12 +5,14 @@ footer {
         .btn-primary {
             background: $color-primary !important;
         }
-        i {
-        color: white !important;    
-        }
-        color: white !important;
+        // i {
+        // color: white !important;    
+        // }
+        color: $color-primary;
+        // color: white !important;
     }
     .footer {
+
         &__first {
             h2 {
                 font-size: 2.2rem;
