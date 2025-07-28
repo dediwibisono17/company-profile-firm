@@ -228,18 +228,37 @@
     .cardc {
         background: #d9d9d9;
         padding: 16px;
+        display: inline-block;
+        width: 30%;
+        height: auto;
         margin: 16px 0;
         border-radius: 16px;
+        vertical-align: middle;
         transition: .3s;
+        text-align: center;
+        @media screen and (max-width:768px) {
+            width: 45%;
+            // vertical-align: middle;
+            // display: inline;
+            padding: 8px;
+        }
         &:hover {
             background: rgba($color-secondary,.6);
         }
         h4 {
             color: $color-primary;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            @media screen and (max-width:768px) {
+                font-size: 1rem;
+            }
         }
     }
    
+}
+
+.wrap-3-col {
+    display: block;
+    margin: 0 auto;
 }
 
 

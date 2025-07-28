@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Perkara Perorangan di Bidang Hukum Keluarga, seperti Perceraian, Waris, dll"
+    },
+    {
+        "id": 2,
+        "name": "Perkara di Bidang Persaingan Usaha terkait Pelaporan Akuisisi Saham"
+    },
+    {
+        "id": 3,
+        "name": "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+    },
+    {
+        "id": 4,
+        "name": "Perkara Likuidasi"
+    },
+    {
+        "id": 5,
+        "name": "Perkara Pidana"
+    },
+    {
+        "id": 6,
+        "name": "Mengajukan tagihan terhadap Perusahaan Asuransi (dalam Likuidasi)"
+    },
+    {
+        "id": 7,
+        "name": "Melakukan Legal Due Diligence dalam Rangka Akuisisi"
+    },
+    {
+        "id": 8,
+        "name": "Perkara di Bidang Persaingan Usaha terkait Pelaporan Akuisisi Saham"
+    },
+    {
+        "id" : 9,
+        "name" : "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+    }
+]
