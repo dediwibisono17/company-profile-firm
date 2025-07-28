@@ -228,12 +228,12 @@
     .cardc {
         background: #d9d9d9;
         padding: 16px;
-        display: inline-block;
-        width: 30%;
+        // display: inline-block;
+        // width: 30%;
         height: auto;
         margin: 16px 8px;
         border-radius: 16px;
-        vertical-align: middle;
+        // vertical-align: middle;
         transition: .3s;
         text-align: center;
         @media screen and (max-width:768px) {
@@ -259,8 +259,11 @@
 }
 
 .wrap-3-col {
-    display: block;
-    margin: 0 auto;
+        display: flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: normal;
 }
 
 
