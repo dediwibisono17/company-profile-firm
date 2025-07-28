@@ -129,6 +129,16 @@
 
     .profil {
         padding: 0 !important;
+        .name {
+            font-weight: bold;
+        }
+        h5 {
+            a {
+                @media screen and (max-width:768px) {
+                    font-size: 1rem !important;
+                }
+            }
+        }
     }
     .faq-section {
         .image {

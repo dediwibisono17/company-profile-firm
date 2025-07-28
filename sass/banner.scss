@@ -41,7 +41,7 @@
                 height: auto;
                 @media screen and (max-width: 768px) {
                     width: 85%;
-                    top: 60%;
+                    top: 50%;
                 }
                 img {
                     width: 100%;
@@ -95,7 +95,7 @@
     bottom: -20%;
     transform: translate(-50%, 0);
     @media screen and (max-width: 768px) {
-        margin-top: -40%;
+        margin-top: -80%;
         position: relative;
         // display: none;
     }
