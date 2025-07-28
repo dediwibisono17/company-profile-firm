@@ -231,7 +231,7 @@
         display: inline-block;
         width: 30%;
         height: auto;
-        margin: 16px 0;
+        margin: 16px 8px;
         border-radius: 16px;
         vertical-align: middle;
         transition: .3s;
@@ -241,6 +241,8 @@
             // vertical-align: middle;
             // display: inline;
             padding: 8px;
+            margin: 8px 4px;
+            border-radius: 8px;
         }
         &:hover {
             background: rgba($color-secondary,.6);
