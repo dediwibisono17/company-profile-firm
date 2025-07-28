@@ -1,7 +1,7 @@
 // alert(1)
 $.ajax({
-    url: '/company-profile-firm/js/why.json',
-    // url: 'js/why.json',
+    // url: '/company-profile-firm/js/why.json',
+    url: 'js/why.json',
     method: 'GET',
     success: (response => {
         console.log(response); 
