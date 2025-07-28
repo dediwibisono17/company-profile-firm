@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "desc": "<p>Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya.</p> <p>Memandang hubungan Advokat-Klien bukan hanya dari segi profesionalitas, namun juga hubungan keakraban, sehingga hubungan Advokat-Klien menjadi santai dan bersahabat. Kami memandang hubungan ini penting agar Klien mendapatkan kenyamanan dan penanganan perkara yang professional disaat yang bersamaan. Inspirasi ini kami adopsi dari budaya kerja Google.</p> <p>Pendekatan ini terbukti mampu memberikan kepuasan bagi klien-klien kami dan secara konsisten menjadikan kami terus berkembang sampai dengan saat ini.</p>",
+    "usp": [
+        {
+            "icon" : "`<i class='fas fa-solid fa-users'></i>`",
+            "title" : "Profesional",
+            "desc" : "Kami bekerja dengan orang-orang hebat yang terlatih dan terampil dalam memberikan layanan hukum terbaik."
+        },
+        {
+            "icon" : "`<i class='fas fa-solid fa-award'></i>`",
+            "title" : "Integritas",
+            "desc": "Kami melayani dengan kualitas jujur dalam segala kegiatan dan layanan"
+        },
+        {
+            "icon" : "`<i class='fas fa-solid fa-handshake'></i>`",
+            "title" : "Peduli",
+            "desc" : "Kami memberikan perhatian serius pada detail situasi dan memahami bagaimana kebutuhan klien kami."
+        }
+    ]
+}]
