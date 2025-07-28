@@ -1,5 +1,5 @@
 $.ajax({
-    url: '../js/profile.json',
+    url: '/company-profile-firm/js/profile.json',
     method: 'GET',
     success: (response => {
         //console.log(response);
