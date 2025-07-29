@@ -233,6 +233,7 @@
         height: auto;
         margin: 16px 8px;
         border-radius: 16px;
+       
         // vertical-align: middle;
         transition: .3s;
         text-align: center;
@@ -279,5 +280,11 @@
         @media screen and (max-width:768px) {
             font-size: 1.1rem;
         }
+    }
+}
+
+.contact {
+    a {
+        color: $color-primary;
     }
 }

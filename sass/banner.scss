@@ -96,7 +96,7 @@
     bottom: -10%;
     transform: translate(-50%, 0);
     @media screen and (max-width: 768px) {
-        margin-top: -80%;
+        margin-top: -50%;
         position: relative;
         // display: none;
     }
@@ -161,7 +161,11 @@
             }
             p {
                 font-size: 1.2rem;
+                @media screen and (max-width:768px) {
+                    font-size: .9rem;
+                }
             }
         }
     }
 }
+
