@@ -109,13 +109,29 @@
 //         }
 //     }
 // }
-
+.tagsx {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: $color-primary;
+    color: white;
+    width: fit-content;
+    padding: 2px 4px;
+    border-radius: 8px;
+    font-size: .6rem;
+}
 .header {
     &__first {
          background: $color-primary;
         height: 55px;
         position: relative;
         z-index: 1;
+        a {
+            // color: $color-primary !important;
+            i {
+                // color: $color-primary;
+            }
+        }
         @media screen and (max-width: 768px) {
             display: none;
         }
@@ -137,11 +153,15 @@
             li {
                 display: inline-block;
                 margin-right: 16px;
+                position: relative;
 
                 a {
                     font-size: 24px;
                     list-style-type: none;
                     color: white;
+                    small {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

@@ -49,19 +49,20 @@
                     object-fit: contain;
                 }
                 p {
-                    // font-size: 1.2rem;
+                    font-size: 1.5rem;
                     color: white;
                     width: 65%;
                     @media screen and (max-width: 768px) {
                         width: 100%;
+                        font-size: 1.1rem;
                     }
                 }
             }
             &__title {
                 color: #fff;
-                font-size: 3.5rem;
+                font-size: 5rem;
                 width: 75%;
-                line-height: 3.5rem;
+                line-height: 5.5rem;
                 font-weight: bold;
                 text-shadow: 2px 2px black;
                 @media screen and (max-width: 768px) {
@@ -92,7 +93,7 @@
     left: 50%;
     // top: 100%;
     width: 100%;
-    bottom: -20%;
+    bottom: -10%;
     transform: translate(-50%, 0);
     @media screen and (max-width: 768px) {
         margin-top: -80%;
@@ -159,7 +160,7 @@
                 }
             }
             p {
-                font-size: 14px;
+                font-size: 1.2rem;
             }
         }
     }
