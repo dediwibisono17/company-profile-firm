@@ -102,10 +102,10 @@
     }
     .rectanglex {
         width: 33%;
-        vertical-align: bottom;
+        vertical-align: top;
         margin: 0 auto;
         display: inline-block;
-        height: 175px;
+        height: fit-content;
         background: $color-primary;
         color: white;
         padding: 16px;
