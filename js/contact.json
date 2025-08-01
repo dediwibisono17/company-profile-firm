@@ -1,0 +1,24 @@
+[
+    {
+        "lang": "id",
+        "data": [
+            {
+                "id": 1,
+                "email": "info@forseti.id",
+                "address": "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+            }
+           
+        ]
+    },
+    {
+        "lang": "en",
+        "data": [
+            {
+                "id": 1,
+                "email": "info@forseti.id",
+                "address": "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+            }
+           
+        ]
+    }
+]

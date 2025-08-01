@@ -1,0 +1,17 @@
+[
+    {
+        "lang" : "id",
+        "data" : {
+            "menu" : ["Beranda", "Tentang Kami", "Mengapa Kami", "Profil", "Pengalaman Kami", "kontak Kami"],
+            "footer": {
+                "logo" : "img/logo.png",
+                "alamat" : "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+                "kontak" : {
+                    "telepon" : "(021) 5682703",
+                    "email" : "info@forseti.id",
+                    "whatsapp": ["081311609187","087832044565"]
+                }
+            }
+        }
+    }
+]

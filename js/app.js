@@ -45,6 +45,24 @@ $(document).ready(function () {
 //     });
 // }).scroll();
 
+$(".click-flag").click(function() {
+    // var id_ = $(this).attr('data-content');
+    var id_ = $(this).attr('data-lang');
+    // var params = { page: id_ };
+    // var url = 'whyus.html?';
+    // var str = jQuery.param(params);
+    // var res = url + str;
+    // alert(id_)
+    // window.location.href = res
+    
+    localStorage.setItem("lang", id_);
+    var getLocal = localStorage.getItem('lang');
+    console.log(getLocal);
+    
+        // alert(res);
+        
+    })
+
 // $('.slider-news').slick({
 //     dots: true,
 //     infinite: false,

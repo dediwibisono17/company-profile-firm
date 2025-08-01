@@ -1,0 +1,17 @@
+[
+    {
+        "lang" : "id",
+        "banner" : [
+            {
+                "image" : "img/bg-1.jpg",
+                "title" : "Forseti Law Office",
+                "subtitle" : "Sebuah Kantor Hukum di Jakarta yang bergerak di bidang litigasi dan non litigasi."
+            },
+            {
+                "image" : "img/bg-1.jpg",
+                "title" : "Mengapa Kami Berbeda",
+                "subtitle" : "Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya."
+            } 
+        ]
+    }
+]

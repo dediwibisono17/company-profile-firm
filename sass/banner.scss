@@ -113,6 +113,9 @@
         &:hover {
             // background: #e8ae00;
             background: $color-secondary;
+            .fas {
+                color: white;
+            }
         }
         @media screen and (max-width: 768px) {
             padding: 8px;
@@ -128,6 +131,7 @@
             .fas {
                 font-size: 1.8rem;
                 color: $color-gold;
+
                 @media screen and (max-width:768px) {
                     font-size:1.5rem;
                 }
