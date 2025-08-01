@@ -1,21 +1,49 @@
-[{
-    "id": 1,
-    "desc": "<p>Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya.</p> <p>Memandang hubungan Advokat-Klien bukan hanya dari segi profesionalitas, namun juga hubungan keakraban, sehingga hubungan Advokat-Klien menjadi santai dan bersahabat. Kami memandang hubungan ini penting agar Klien mendapatkan kenyamanan dan penanganan perkara yang professional disaat yang bersamaan. Inspirasi ini kami adopsi dari budaya kerja Google.</p> <p>Pendekatan ini terbukti mampu memberikan kepuasan bagi klien-klien kami dan secara konsisten menjadikan kami terus berkembang sampai dengan saat ini.</p>",
-    "usp": [
-        {
-            "icon" : "<i class='fas fa-solid fa-users'></i>",
-            "title" : "Profesional",
-            "desc" : "Kami bekerja dengan orang-orang hebat yang terlatih dan terampil dalam memberikan layanan hukum terbaik."
-        },
-        {
-            "icon" : "<i class='fas fa-solid fa-award'></i>",
-            "title" : "Integritas",
-            "desc": "Kami melayani dengan kualitas jujur dalam segala kegiatan dan layanan"
-        },
-        {
-            "icon" : "<i class='fas fa-solid fa-handshake'></i>",
-            "title" : "Peduli",
-            "desc" : "Kami memberikan perhatian serius pada detail situasi dan memahami bagaimana kebutuhan klien kami."
-        }
-    ]
-}]
+[
+    {
+        "id": 1,
+        "lang": "id",
+        "title": "Mengapa Kami Berbeda",
+        "desc": "<p>Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya.</p> <p>Memandang hubungan Advokat-Klien bukan hanya dari segi profesionalitas, namun juga hubungan keakraban, sehingga hubungan Advokat-Klien menjadi santai dan bersahabat. Kami memandang hubungan ini penting agar Klien mendapatkan kenyamanan dan penanganan perkara yang professional disaat yang bersamaan. Inspirasi ini kami adopsi dari budaya kerja Google.</p> <p>Pendekatan ini terbukti mampu memberikan kepuasan bagi klien-klien kami dan secara konsisten menjadikan kami terus berkembang sampai dengan saat ini.</p>",
+        "usp": [
+            {
+                "icon" : "<i class='fas fa-solid fa-users'></i>",
+                "title" : "Profesional",
+                "desc" : "Kami bekerja dengan orang-orang hebat yang terlatih dan terampil dalam memberikan layanan hukum terbaik."
+            },
+            {
+                "icon" : "<i class='fas fa-solid fa-award'></i>",
+                "title" : "Integritas",
+                "desc": "Kami melayani dengan kualitas jujur dalam segala kegiatan dan layanan"
+            },
+            {
+                "icon" : "<i class='fas fa-solid fa-handshake'></i>",
+                "title" : "Peduli",
+                "desc" : "Kami memberikan perhatian serius pada detail situasi dan memahami bagaimana kebutuhan klien kami."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "lang": "en",
+        "title": "What Make Us Different?",
+        "desc": "<p>We aim to disrupt the legal landscape in Indonesia through distinct approaches to case handling, un like traditional law firms.</p> <p>Inspired by Google's work culture, we foster a client relationship that balances professionalism and familiarity, ensuring comfort without compromising on quality. This approach has consistently brought client satisfaction and driven our continuous growth.</p>",
+        "usp": [
+            {
+                "icon" : "<i class='fas fa-solid fa-users'></i>",
+                "title" : "Professional",
+                "desc" : "We work with skilled and trained individuals to deliver the best legal services."
+            },
+            {
+                "icon" : "<i class='fas fa-solid fa-award'></i>",
+                "title" : "Integrity",
+                "desc": "We uphold honesty and quality in all activities and services."
+            },
+            {
+                "icon" : "<i class='fas fa-solid fa-handshake'></i>",
+                "title" : "Care",
+                "desc" : "We pay close attention to every detail and understand our clients' needs."
+            }
+        ]
+    }
+    
+]

@@ -1,34 +1,94 @@
+
+
 // alert(1)
 var baseURL = "company-profile-firm"
-$.ajax({
-    url: '/'+baseURL+'/js/why.json',
-    // url: 'js/why.json',
-    method: 'GET',
-    success: (response => {
-        // console.log(response[0].usp); 
-        var a;
-        for (a=0; a<response.length; a++) {
-            var paragraph = response[a].desc;
+// console.log(window.location.pathname);
 
-            // var h = ""
-            // prestasi.map((a, i) => { h += `<li><p>${a}</p></li>` });
-            // var name = response[a].name;
-            // console.log(prestasi);
-            
-            $(".whyus .paragraph").append(paragraph);
-            
-            var prestasi = response[a].usp;
-            var x;
-           // console.log(prestasi);
-            
-            for(x=0; x<prestasi.length; x++) {
-                var icon = prestasi[x].icon;
-                                var title = prestasi[x].title;
-                                                var desc = prestasi[x].desc;
-                //console.log(icon);
+
+
+$(".click-flag").click(function() {
+    // var id_ = $(this).attr('data-content');
+    var id_ = $(this).attr('data-lang');
+    // var params = { page: id_ };
+    // var url = 'whyus.html?';
+    // var str = jQuery.param(params);
+    // var res = url + str;
+    // window.location.href = res
+    
+    localStorage.setItem("lang", id_);
+    var getLocal = localStorage.getItem('lang');
+    // console.log(getLocal);
+    
+        // alert(res);
+        
+    })
+    
+    $.ajax({
+        url: '/'+baseURL+'/js/why.json',
+        // url: 'js/why.json',
+        method: 'GET',
+        success: (response => {
+                var q;
+                var titlex = (response[1].title);
+                var parx = (response[1].desc);
+                var prestasix = response[1].usp;
+                // console.log(parx);
+                
+                $(".whyus .subtitle, .whyus .subtitlex").append(titlex)
+                $(".whyus .paragraph").append(parx);
+                for (q=0; q<prestasix.length;q++) {
+                    // console.log(prestasix[q]);
+                    var icon = prestasix[q].icon;
+                    var title = prestasix[q].title;
+                    var desc = prestasix[q].desc;
+
+                $(".usp .container").append(`
+                    <div class="rectanglex">
+                        <div class="d-block">
+                            <div class="rectanglex__icon">
+                                ${icon}
+                            </div>
+                            <div class="rectanglex__right">
+                                <h3>${title}</h3>
+                                <p>
+                                    ${desc}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `)
+                    
+                }
+
+
+            $(".click-flag").click(function(){
+                var localS = (localStorage.getItem('lang'));
+                var indonesia = localS == "id";
+                var inggris = localS == "en";
+                $(".whyus .subtitle, .whyus .subtitlex").html("");
+                $(".whyus .paragraph").html("");
+                $(".usp .container").html("");
 
                 
-                $(".usp .container").append(`
+
+                //condition
+                if (inggris) {
+                    // console.log('ini inggris');
+                    var q;
+                    var titlex = (response[1].title);
+                    var parx = (response[1].desc);
+                    var prestasix = response[1].usp;
+                    // console.log(parx);
+                    
+                    $(".whyus .subtitle, .whyus .subtitlex").append(titlex)
+                    $(".whyus .paragraph").append(parx);
+                    for (q=0; q<prestasix.length;q++) {
+                        // console.log(prestasix[q]);
+                        var icon = prestasix[q].icon;
+                        var title = prestasix[q].title;
+                        var desc = prestasix[q].desc;
+
+                    $(".usp .container").append(`
                         <div class="rectanglex">
                             <div class="d-block">
                                 <div class="rectanglex__icon">
@@ -43,7 +103,47 @@ $.ajax({
                             </div>
                         </div>
                     `)
-            }
-        }
+                        
+                    }
+                    
+                } else {
+                    // console.log('ini indo');
+                    var titlez = (response[0].title);
+                    var parz = (response[0].desc);
+                    $(".whyus .subtitle, .whyus .subtitlex").append(titlez)
+                    $(".whyus .paragraph").append(parz);
+                    var prestasiz = response[0].usp;
+                    var q;
+                    for (q=0; q<prestasiz.length;q++) {
+                        // console.log(prestasiz[q]);
+                        var icon = prestasiz[q].icon;
+                        var title = prestasiz[q].title;
+                        var desc = prestasiz[q].desc;
+
+                    $(".usp .container").append(`
+                        <div class="rectanglex">
+                            <div class="d-block">
+                                <div class="rectanglex__icon">
+                                    ${icon}
+                                </div>
+                                <div class="rectanglex__right">
+                                    <h3>${title}</h3>
+                                    <p>
+                                      ${desc}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    `)
+                        
+                    }
+                    
+                }
+                
+            })
+            // console.log(localStorage.getItem('lang'))
+
+        
+      
     })
 })
