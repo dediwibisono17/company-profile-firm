@@ -2,8 +2,7 @@
     {
         "lang": "id",
         "title": "Pengalaman Kami",
-        "data" :
-        [
+        "data": [
             {
                 "id": 1,
                 "name": "Perkara Perorangan di Bidang Hukum Keluarga, seperti Perceraian, Waris, dll"
@@ -37,54 +36,91 @@
                 "name": "Perkara di Bidang Persaingan Usaha terkait Pelaporan Akuisisi Saham"
             },
             {
-                "id" : 9,
-                "name" : "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+                "id": 9,
+                "name": "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
             }
-
         ]
     },
-      {
+    {
         "lang": "en",
         "title": "Our Experience",
-        "data" :
-        [
+        "data": [
             {
                 "id": 1,
-                "name": "a Case"
+                "name": "Family law cases: divorce, inheritance, etc."
             },
             {
                 "id": 2,
-                "name": "Perkara di Bidang Persaingan Usaha terkait Pelaporan Akuisisi Saham"
+                "name": "Business competition: share acquisition reporting"
             },
             {
                 "id": 3,
-                "name": "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+                "name": "Land disputes (civil and criminal)"
             },
             {
                 "id": 4,
-                "name": "Perkara Likuidasi"
+                "name": "Liquidation cases"
             },
             {
                 "id": 5,
-                "name": "Perkara Pidana"
+                "name": "Criminal cases"
             },
             {
                 "id": 6,
-                "name": "Mengajukan tagihan terhadap Perusahaan Asuransi (dalam Likuidasi)"
+                "name": "Insurance claims (including liquidation)"
             },
             {
                 "id": 7,
-                "name": "Melakukan Legal Due Diligence dalam Rangka Akuisisi"
+                "name": "Legal due diligence for acquisition"
             },
             {
                 "id": 8,
-                "name": "Perkara di Bidang Persaingan Usaha terkait Pelaporan Akuisisi Saham"
+                "name": "Consumer disputes (BPSK)"
             },
             {
-                "id" : 9,
-                "name" : "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+                "id": 9,
+                "name": "Travel and hospitality industry cases"
+            },
+            {
+                "id": 10,
+                "name": "PKPU (suspension of debt payment obligations)"
+            },
+            {
+                "id": 11,
+                "name": "Cooperative disputes (civil/criminal)"
+            },
+            {
+                "id": 12,
+                "name": "Labor law issues"
+            },
+            {
+                "id": 13,
+                "name": "Food and beverage licensing"
+            },
+            {
+                "id": 14,
+                "name": "Credit agreement disputes"
+            },
+            {
+                "id": 15,
+                "name": "Banking matters"
+            },
+            {
+                "id": 16,
+                "name": "Animal feed import cases"
+            },
+            {
+                "id": 17,
+                "name": "Privacy policy issues"
+            },
+            {
+                "id": 18,
+                "name": "Tax law cases (audit assistance, objections, appeals, investigations, judicial reviews)"
+            },
+            {
+                "id": 19,
+                "name": "Arbitration (BANI and SIAC)"
             }
-
         ]
     }
 ]
