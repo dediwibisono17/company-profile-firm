@@ -13,6 +13,8 @@ $.ajax({
                 var inggris = localS == "en";
 
                 if (inggris) {
+                    $(".about-content").html("")
+                    $(".quotes").html("")
                     var data = (response[1].data);
                     var a;
                     for (a=0; a<data.length; a++) {
@@ -30,6 +32,8 @@ $.ajax({
                     }
                     
                 } else {
+                    $(".about-content").html("")
+                    $(".quotes").html("")
                     // console.log(response[0].lang);
                      var data = (response[0].data);
                     var a;
