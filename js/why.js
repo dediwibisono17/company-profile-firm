@@ -9,8 +9,8 @@ var baseURL = "company-profile-firm"
 
     
     $.ajax({
-        // url: '/'+baseURL+'/js/why.json',
-        url: 'js/why.json',
+        url: '/'+baseURL+'/js/why.json',
+        // url: 'js/why.json',
         method: 'GET',
         success: (response => {
                 var q;

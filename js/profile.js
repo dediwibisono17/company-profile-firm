@@ -1,8 +1,8 @@
 var baseURL = "company-profile-firm"
 
 $.ajax({
-    // url: '/'+baseURL+'/js/profile.json',
-    url: 'js/profile.json',
+    url: '/'+baseURL+'/js/profile.json',
+    // url: 'js/profile.json',
     method: 'GET',
     success: (response => {
         //console.log(response);
@@ -14,11 +14,13 @@ $.ajax({
         //     <img src= "${image}" title="${name}" alt="${name}" />
         //     `
         // )
-        $(".profil #accordion").html("")
+        $(".profil #accordion, .profil .subtitle, .profil .subtitlex").html("")
 
+        $(".profil .subtitle, .profil .subtitlex").html(response[1].title)
 
-          var a;
-                console.log('data', response[1].data);
+        
+                var a;
+                // console.log('data', response[1].data);
 
                 var datax = response[1].data;
                 for (a = 0; a < datax.length; a++) {
@@ -84,10 +86,11 @@ $.ajax({
             // $(".whyus .paragraph").html("");
             // $(".usp .container").html("");
             // console.log(response[1].data.length);
-
+             $(".profil #accordion").html("")
             if (inggris) {
                 var a;
-                console.log('data', response[1].data);
+                // console.log('data', response[1].data);
+                $(".profil .subtitle, .profil .subtitlex").html(response[1].title)
 
                 var datax = response[1].data;
                 for (a = 0; a < datax.length; a++) {
@@ -152,16 +155,17 @@ $.ajax({
                 
 
             } else {
-                var datax = response[0].data;
-                // console.log(name);
+                var dataz = response[0].data;
+                $(".profil .subtitle, .profil .subtitlex").html(response[0].title)
+                console.log(dataz);
 
-                for (a = 0; a < datax.length; a++) {
-                    var name = datax[a].name;
-                    var idx = datax[a].id;
-                    var title = datax[a].title;
-                    var image = datax[a].image;
-                    var exp = datax[a].exp;
-                    var prestasi = datax[a].prestasi;
+                for (a = 0; a < dataz.length; a++) {
+                    var name = dataz[a].name;
+                    var idx = dataz[a].id;
+                    var title = dataz[a].title;
+                    var image = dataz[a].image;
+                    var exp = dataz[a].exp;
+                    var prestasi = dataz[a].prestasi;
                     var h = ""
                     prestasi.map((a, i) => { h += `<li><p>${a}</p></li>` });
 
