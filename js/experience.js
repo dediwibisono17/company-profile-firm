@@ -11,7 +11,7 @@ $.ajax({
         var data = response[1].data;
                 var a;
                 // console.log(data);
-                
+                $(".subtitle, .subtitlex").html(response[1].title)
                 for (a = 0; a < data.length; a++) {
                     var name = data[a].name;
                     $(".wrap-3-col").append(`
@@ -29,6 +29,7 @@ $.ajax({
                 var data = response[1].data;
                 var a;
                 // console.log(data);
+                $(".subtitle, .subtitlex").html(response[1].title)
                 
                 for (a = 0; a < data.length; a++) {
                     var name = data[a].name;
@@ -42,6 +43,7 @@ $.ajax({
                 var data = response[0].data;
                 var a;
                 // console.log(data);
+                $(".subtitle, .subtitlex").html(response[0].title)
                 
                 for (a = 0; a < data.length; a++) {
                     var name = data[a].name;
