@@ -8,7 +8,18 @@ $.ajax({
     success: (response => {
         // console.log(response); 
         // var data = (response[0].data);
-
+        var data = response[1].data;
+                var a;
+                // console.log(data);
+                
+                for (a = 0; a < data.length; a++) {
+                    var name = data[a].name;
+                    $(".wrap-3-col").append(`
+                    <div class="cardc">
+                        <h4>${name}</h4>
+                    </div>
+                `)
+            }
         $(".click-flag").click(function () {
             var localS = (localStorage.getItem('lang'));
             var indonesia = localS == "id";
