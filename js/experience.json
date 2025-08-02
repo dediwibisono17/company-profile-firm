@@ -1,6 +1,7 @@
 [
     {
         "lang": "id",
+        "title": "Pengalaman Kami",
         "data" :
         [
             {
@@ -44,6 +45,7 @@
     },
       {
         "lang": "en",
+        "title": "Our Experience",
         "data" :
         [
             {
