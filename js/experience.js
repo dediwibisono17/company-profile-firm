@@ -1,13 +1,13 @@
 // alert(1)
 var baseURL = "company-profile-firm"
 $.ajax({
-    // url: '/'+baseURL+'/js/experience.json',
-    url: 'js/experience.json',
+    url: '/'+baseURL+'/js/experience.json',
+    // url: 'js/experience.json',
     method: 'GET',
     success: (response => {
         // console.log(response); 
         // var data = (response[0].data);
-        $(".subtitle, .subtitlex").htm("")
+        $(".subtitle, .subtitlex").html("")
         var data = response[1].data;
                 var a;
                 // console.log(data);
