@@ -1,32 +1,76 @@
 [
     {
-        "lang" : "id",
-        "banner" : [
+        "lang": "id",
+        "banner": [
             {
-                "image" : "img/bg-1.jpg",
-                "title" : "Forseti Law Office",
-                "subtitle" : "Sebuah Kantor Hukum di Jakarta yang bergerak di bidang litigasi dan non litigasi."
+                "image": "img/bumper1.jpg",
+                "title": "Forseti Law Office",
+                "subtitle": "Sebuah Kantor Hukum di Jakarta yang bergerak di bidang litigasi dan non litigasi."
             },
             {
-                "image" : "img/bg-1.jpg",
-                "title" : "Mengapa Kami Berbeda",
-                "subtitle" : "Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya."
-            } 
+                "image": "img/bumper3.jpg",
+                "title": "Mengapa Kami Berbeda",
+                "subtitle": "Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya."
+            }
+        ],
+        "kasus" : [
+            {
+                "parent": "Perkara Perorangan",
+                "name" : "Berbagai perkara di bidang hukum keluarga, perceraian, ahli waris, dan lain-lain"
+            },
+            {
+                "parent": "Sengketa",
+                "name" : "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+            },
+            {
+                "parent": "Legal Due Diligence",
+                "name" : "Melakukan Legal Due Diligence dalam Rangka Akuisisi"
+            },
+            {
+                "parent": "Perkara hukum di perpajakan",
+                "name" : "Pengurusan sengketa pajak di kantor pajak, kantor wilayah dan pengadilan pajak"
+            },
+            {
+                "parent": "Sengketa Konsumen",
+                "name" : "Sengketa Konsumen"
+            }
         ]
     },
     {
-    "lang": "en",
-    "banner": [
-      {
-        "image": "img/bg-1.jpg",
-        "title": "Forseti Law Office",
-        "subtitle": "is a law firm based in Jakarta that operates in both litigation and non-litigation areas."
-      },
-      {
-        "image": "img/bg-1.jpg",
-        "title": "What Makes Us Different",
-        "subtitle": "We aim to disrupt the legal landscape in Indonesia through distinct approaches to case handling, unlike traditional law firms."
-      }
-    ]
-  }
+        "lang": "en",
+        "banner": [
+            {
+                "image": "img/bumper1.jpg",
+                "title": "Forseti Law Office",
+                "subtitle": "is a law firm based in Jakarta that operates in both litigation and non-litigation areas."
+            },
+            {
+                "image": "img/bumper3.jpg",
+                "title": "What Makes Us Different",
+                "subtitle": "We aim to disrupt the legal landscape in Indonesia through distinct approaches to case handling, unlike traditional law firms."
+            }
+        ],
+       "kasus" : [
+            {
+                "parent": "Business competition",
+                "name" : "Berbagai perkara di bidang hukum keluarga, perceraian, ahli waris, dan lain-lain"
+            },
+            {
+                "parent": "Sengketa",
+                "name" : "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+            },
+            {
+                "parent": "Legal Due Diligence",
+                "name" : "Melakukan Legal Due Diligence dalam Rangka Akuisisi"
+            },
+            {
+                "parent": "Perkara hukum di perpajakan",
+                "name" : "Pengurusan sengketa pajak di kantor pajak, kantor wilayah dan pengadilan pajak"
+            },
+            {
+                "parent": "Sengketa Konsumen",
+                "name" : "Sengketa Konsumen"
+            }
+        ]
+    }
 ]

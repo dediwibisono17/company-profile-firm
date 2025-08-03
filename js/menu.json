@@ -1,15 +1,100 @@
 [
     {
-        "lang" : "id",
-        "data" : {
-            "menu" : ["Beranda", "Tentang Kami", "Mengapa Kami", "Profil", "Pengalaman Kami", "kontak Kami"],
+        "lang": "id",
+        "data": {
+            "menu": [
+                {
+                    "name":"Beranda",
+                    "link":"/"
+                },
+                {
+                    "name":"Tentang Kami",
+                    "link":"about.html"
+                },
+                {
+                    "name":"Mengapa Kami",
+                    "link":"whyus.html"
+                },
+                {
+                    "name":"Profil",
+                    "link":"profile.html"
+                },
+                {
+                    "name":"Pengalaman Kami",
+                    "link":"experience.html"
+                },
+                {
+                    "name":"Kontak Kami",
+                    "link":"contact.html"
+                }
+            ],
             "footer": {
-                "logo" : "img/logo.png",
-                "alamat" : "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
-                "kontak" : {
-                    "telepon" : "(021) 5682703",
-                    "email" : "info@forseti.id",
-                    "whatsapp": ["081311609187","087832044565"]
+                "logo": "img/logo.png",
+                "alamat": "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+                "kontak": {
+                    "telepon": "(021) 5682703",
+                    "email": "info@forseti.id",
+                    "whatsapp": [
+                        {
+                            "no": "081311609187",
+                            "text":"https://api.whatsapp.com/send?text=Welcome%20to%20Forseti%20Law%20Office%0D%0a %0aSaya ingin konsultasi tentang%20&phone=6281311609187"
+                        }, 
+                        {
+                            "no":"087832044565",
+                            "text":"https://api.whatsapp.com/send?text=Welcome%20to%20Forseti%20Law%20Office%0D%0a %0aSaya ingin konsultasi tentang%20&phone=6281311609187"
+                        }
+                        
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "lang": "en",
+        "data": {
+            "menu": [
+                {
+                    "name":"Home",
+                    "link":"/"
+                },
+                {
+                    "name":"About Us",
+                    "link":"about.html"
+                },
+                {
+                    "name":"Why Us",
+                    "link":"whyus.html"
+                },
+                {
+                    "name":"Profile",
+                    "link":"profile.html"
+                },
+                {
+                    "name":"Our Experiences",
+                    "link":"experience.html"
+                },
+                {
+                    "name":"Contact Us",
+                    "link":"contact.html"
+                }
+            ],
+            "footer": {
+                "logo": "img/logo.png",
+                "alamat": "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+                "kontak": {
+                    "telepon": "(021) 5682703",
+                    "email": "info@forseti.id",
+                    "whatsapp": [
+                        {
+                            "no": "081311609187",
+                            "text":"https://api.whatsapp.com/send?text=Welcome%20to%20Forseti%20Law%20Office%0D%0a %0aSaya ingin konsultasi tentang%20&phone=6281311609187"
+                        }, 
+                        {
+                            "no":"087832044565",
+                            "text":"https://api.whatsapp.com/send?text=Welcome to Forseti Law Office Thank you for contacting Hendrawan Agusta! Please let us know how we can help you&phone=6281311609187"
+                        }
+                        
+                    ]
                 }
             }
         }

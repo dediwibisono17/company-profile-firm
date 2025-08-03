@@ -1,9 +1,4 @@
-$('.sliderx').slick({
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows:false,
-    fade:true
-});
+
 
 $('.positive').slick({
     autoplay: true,
