@@ -13,5 +13,20 @@
                 "subtitle" : "Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya."
             } 
         ]
-    }
+    },
+    {
+    "lang": "en",
+    "banner": [
+      {
+        "image": "img/bg-1.jpg",
+        "title": "Forseti Law Office",
+        "subtitle": "is a law firm based in Jakarta that operates in both litigation and non-litigation areas."
+      },
+      {
+        "image": "img/bg-1.jpg",
+        "title": "What Makes Us Different",
+        "subtitle": "We aim to disrupt the legal landscape in Indonesia through distinct approaches to case handling, unlike traditional law firms."
+      }
+    ]
+  }
 ]
