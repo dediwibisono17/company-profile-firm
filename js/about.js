@@ -2,7 +2,7 @@ var baseURL = "company-profile-firm"
 
 $.ajax({
     url: '/'+baseURL+'/js/about.json',
-    // url: 'js/about.json',
+    //url: 'js/about.json',
     method: 'GET',
     success: (response=>{
         // console.log(response);

@@ -2,7 +2,7 @@ var baseURL = "company-profile-firm"
 
 $.ajax({
     url: '/'+baseURL+'/js/homepage.json',
-    // url: 'js/homepage.json',
+    //url: 'js/homepage.json',
     method: 'GET',
     success: (response => {
         // console.log(response);
@@ -173,7 +173,7 @@ $.ajax({
 //usp
 $.ajax({
         url: '/'+baseURL+'/js/why.json',
-    // url: 'js/why.json',
+    //url: 'js/why.json',
     method: "GET",
     success: (response => {
         // console.log(response);
@@ -264,7 +264,7 @@ $.ajax({
 //about 
 $.ajax({
     url: '/'+baseURL+'/js/about.json',
-    // url: 'js/about.json',
+    //url: 'js/about.json',
     method: "GET",
     success: (response => {
         // console.log(response);
