@@ -5,7 +5,7 @@
             "menu": [
                 {
                     "name":"Beranda",
-                    "link":"/"
+                    "link":"company-profile-firm"
                 },
                 {
                     "name":"Tentang Kami",
@@ -55,7 +55,7 @@
             "menu": [
                 {
                     "name":"Home",
-                    "link":"/"
+                    "link":"company-profile-firm"
                 },
                 {
                     "name":"About Us",
