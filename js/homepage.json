@@ -13,26 +13,26 @@
                 "subtitle": "Kami hadir untuk mendisrupsi dunia hukum di Indonesia dengan cara-cara penanganan perkara yang berbeda dengan kantor hukum dan/atau firma hukum lainnya."
             }
         ],
-        "kasus" : [
+        "kasus": [
             {
                 "parent": "Perkara Perorangan",
-                "name" : "Berbagai perkara di bidang hukum keluarga, perceraian, ahli waris, dan lain-lain"
+                "name": "Berbagai perkara di bidang hukum keluarga, perceraian, ahli waris, dan lain-lain"
             },
             {
                 "parent": "Sengketa",
-                "name" : "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+                "name": "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
             },
             {
                 "parent": "Legal Due Diligence",
-                "name" : "Melakukan Legal Due Diligence dalam Rangka Akuisisi"
+                "name": "Melakukan Legal Due Diligence dalam Rangka Akuisisi"
             },
             {
                 "parent": "Perkara hukum di perpajakan",
-                "name" : "Pengurusan sengketa pajak di kantor pajak, kantor wilayah dan pengadilan pajak"
+                "name": "Pengurusan sengketa pajak di kantor pajak, kantor wilayah dan pengadilan pajak"
             },
             {
                 "parent": "Sengketa Konsumen",
-                "name" : "Sengketa Konsumen"
+                "name": "Sengketa Konsumen"
             }
         ]
     },
@@ -50,37 +50,37 @@
                 "subtitle": "We aim to disrupt the legal landscape in Indonesia through distinct approaches to case handling, unlike traditional law firms."
             }
         ],
-      "kasus": [
-    {
-      "parent": "Individual Cases",
-      "name": [
-        "Individual cases in family law, such as divorce, inheritance, etc."
-      ]
-    },
-    {
-      "parent": "Disputes",
-      "name": [
-        "Land disputes (civil and criminal)"
-      ]
-    },
-    {
-      "parent": "Legal Due Diligence",
-      "name": [
-        "Legal due diligence for acquisition"
-      ]
-    },
-    {
-      "parent": "Tax Law Cases",
-      "name": [
-        "Audit assistance, objections, appeals, investigations, judicial reviews"
-      ]
-    },
-    {
-      "parent": "Consumer Disputes",
-      "name": [
-        "Consumer disputes"
-      ]
-    }
-  ]
+        "kasus": [
+            {
+                "parent": "Individual Cases",
+                "name": [
+                    "Individual cases in family law, such as divorce, inheritance, etc."
+                ]
+            },
+            {
+                "parent": "Disputes",
+                "name": [
+                    "Land disputes (civil and criminal)"
+                ]
+            },
+            {
+                "parent": "Legal Due Diligence",
+                "name": [
+                    "Legal due diligence for acquisition"
+                ]
+            },
+            {
+                "parent": "Tax Law Cases",
+                "name": [
+                    "Audit assistance, objections, appeals, investigations, judicial reviews"
+                ]
+            },
+            {
+                "parent": "Consumer Disputes",
+                "name": [
+                    "Consumer disputes"
+                ]
+            }
+        ]
     }
 ]
