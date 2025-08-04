@@ -42,7 +42,7 @@ $.ajax({
                 
                 
             }
-            $(".homey").append(menu[0].name);
+            $(".homey").append(menu[1].name);
 
 
         setTimeout(()=>{
