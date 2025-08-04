@@ -10,8 +10,41 @@ $.ajax({
         // var path = window.location.pathname;
         // var splitPath = path.slice(1,6);
         // console.log(splitPath);
-         $(".menux").html("")
-            $(".homey").html("")
+         var menu = (response[1].data.menu);
+           
+            var a;
+            // console.log(menu);
+            for (a=0;a<menu.length;a++) {
+                var h = "";
+                var link = (menu[a].link);
+                var name = menu[a].name;
+                // console.log(link);
+                var logo = `
+                <li class="nav-item isdesktop">
+                                <a href="/company-profile-firm">
+                                    <img class="logo" src="img/logo.png" alt="Forseti Law Office"
+                                        title="Forseti Law Office">
+                                    <div class="namex" hidden>
+                                        <div class="one">Forseti</div>
+                                        <div class="two">Law Office</div>
+                                    </div>
+                                </a>
+                            </li>
+                `
+                $(".menux").append(`
+                    <li class="nav-item">
+                        <a href="${link}" class="nav-link font-bold upper ">${name}</a>
+                    </li>
+                `)
+    
+                // $(".menux").unshift(logo)
+                
+                
+                
+            }
+            $(".homey").append(menu[0].name);
+
+
         setTimeout(()=>{
             var localS = (localStorage.getItem('lang'));
             var indonesia = localS == "id";
@@ -74,39 +107,7 @@ $.ajax({
         },1000)
         
        
-            var menu = (response[1].data.menu);
-           
-            var a;
-            // console.log(menu);
-            for (a=0;a<menu.length;a++) {
-                var h = "";
-                var link = (menu[a].link);
-                var name = menu[a].name;
-                // console.log(link);
-                var logo = `
-                <li class="nav-item isdesktop">
-                                <a href="/company-profile-firm">
-                                    <img class="logo" src="img/logo.png" alt="Forseti Law Office"
-                                        title="Forseti Law Office">
-                                    <div class="namex" hidden>
-                                        <div class="one">Forseti</div>
-                                        <div class="two">Law Office</div>
-                                    </div>
-                                </a>
-                            </li>
-                `
-                $(".menux").append(`
-                    <li class="nav-item">
-                        <a href="${link}" class="nav-link font-bold upper ">${name}</a>
-                    </li>
-                `)
-    
-                // $(".menux").unshift(logo)
-                
-                
-                
-            }
-            $(".homey").append(menu[0].name);
+            
         
         
          $(".click-flag").click(function () {
