@@ -4,22 +4,83 @@ $.ajax({
     url: '/'+baseURL+'/js/menu.json',
     // url: "js/menu.json",
     method: 'GET',
-    success: (response=>{
+    success: (response => {
         console.log(response);
         // console.log(window.location.pathname);
         // var path = window.location.pathname;
         // var splitPath = path.slice(1,6);
         // console.log(splitPath);
-         var menu = (response[1].data.menu);
-           
-            var a;
-            // console.log(menu);
-            for (a=0;a<menu.length;a++) {
-                var h = "";
-                var link = (menu[a].link);
-                var name = menu[a].name;
-                // console.log(link);
-                var logo = `
+
+
+
+        setTimeout(() => {
+            var localS = (localStorage.getItem('lang'));
+            var indonesia = localS == "id";
+            var inggris = localS == "en";
+            $(".menux").html("")
+            $(".homey").html("")
+
+            if (inggris) {
+                console.log("inggris", inggris);
+                var menu = (response[1].data.menu);
+                $(".menux").html("")
+
+                var a;
+                // console.log(menu);
+                for (a = 0; a < menu.length; a++) {
+                    var h = "";
+                    var link = (menu[a].link);
+                    var name = menu[a].name;
+                    // console.log(link);
+
+                    $(".menux").append(`
+                                <li class="nav-item">
+                                    <a href="${link}" class="nav-link font-bold upper">${name}</a>
+                                </li>
+                            `)
+
+
+
+                }
+
+                $(".homey").append(menu[0].name);
+
+            }
+            else if (indonesia) {
+                console.log("indonesia", indonesia);
+                var menu = (response[0].data.menu);
+                $(".menux").html("")
+
+                var a;
+                // console.log(menu);
+                for (a = 0; a < menu.length; a++) {
+                    var h = "";
+                    var link = (menu[a].link);
+                    var name = menu[a].name;
+                    // console.log(link);
+
+                    $(".menux").append(`
+                                <li class="nav-item">
+                                    <a href="${link}" class="nav-link font-bold upper">${name}</a>
+                                </li>
+                            `)
+
+
+
+                }
+
+                $(".homey").append(menu[0].name);
+            } else {
+                var menu = (response[1].data.menu);
+
+                var a;
+                // console.log(menu);
+                for (a = 0; a < menu.length; a++) {
+                    var h = "";
+                    var link = (menu[a].link);
+                    var name = menu[a].name;
+                    console.log(link);
+                    var logo = `
                 <li class="nav-item isdesktop">
                                 <a href="/company-profile-firm">
                                     <img class="logo" src="img/logo.png" alt="Forseti Law Office"
@@ -31,143 +92,84 @@ $.ajax({
                                 </a>
                             </li>
                 `
-                $(".menux").append(`
+                    $(".menux").append(`
                     <li class="nav-item">
                         <a href="${link}" class="nav-link font-bold upper ">${name}</a>
                     </li>
                 `)
-    
-                // $(".menux").unshift(logo)
-                
-                
-                
+
+                    // $(".menux").unshift(logo)
+
+
+
+                }
+                $(".homey").append(menu[1].name);
             }
-            $(".homey").append(menu[1].name);
+
+        }, 1000)
 
 
-        setTimeout(()=>{
+
+
+
+        $(".click-flag").click(function () {
             var localS = (localStorage.getItem('lang'));
             var indonesia = localS == "id";
             var inggris = localS == "en";
-            $(".menux").html("")
             $(".homey").html("")
-            
+
             if (inggris) {
-                console.log("inggris",inggris);
                 var menu = (response[1].data.menu);
-                    $(".menux").html("")
 
-                    var a;
-                    // console.log(menu);
-                    for (a=0;a<menu.length;a++) {
-                        var h = "";
-                        var link = (menu[a].link);
-                        var name = menu[a].name;
-                        // console.log(link);
-                        
-                        $(".menux").append(`
+                $(".menux").html("")
+                var a;
+                // console.log(menu);
+                for (a = 0; a < menu.length; a++) {
+                    var h = "";
+                    var link = (menu[a].link);
+                    var name = menu[a].name;
+                    // console.log(link);
+
+                    $(".menux").append(`
                                 <li class="nav-item">
                                     <a href="${link}" class="nav-link font-bold upper">${name}</a>
                                 </li>
                             `)
-                      
-
-                    
-                   }
-
-                     $(".homey").append(menu[0].name);
-                
-            }
-            if (indonesia) {
-                console.log("indonesia",indonesia);
-                 var menu = (response[0].data.menu);
-                    $(".menux").html("")
-
-                    var a;
-                    // console.log(menu);
-                    for (a=0;a<menu.length;a++) {
-                        var h = "";
-                        var link = (menu[a].link);
-                        var name = menu[a].name;
-                        // console.log(link);
-                        
-                        $(".menux").append(`
-                                <li class="nav-item">
-                                    <a href="${link}" class="nav-link font-bold upper">${name}</a>
-                                </li>
-                            `)
-                      
-
-                    
-                   }
-
-                     $(".homey").append(menu[0].name);
-            }
-
-        },1000)
-        
-       
-            
-        
-        
-         $(".click-flag").click(function () {
-                var localS = (localStorage.getItem('lang'));
-                var indonesia = localS == "id";
-                var inggris = localS == "en";
-                                    $(".homey").html("")
-
-                if (inggris) {
-                    var menu = (response[1].data.menu);
-
-                    $(".menux").html("")
-                    var a;
-                    // console.log(menu);
-                    for (a=0;a<menu.length;a++) {
-                        var h = "";
-                        var link = (menu[a].link);
-                        var name = menu[a].name;
-                        // console.log(link);
-                        
-                        $(".menux").append(`
-                                <li class="nav-item">
-                                    <a href="${link}" class="nav-link font-bold upper">${name}</a>
-                                </li>
-                            `)
-                      
-
-                    
-                   }
-                    $(".homey").append(menu[0].name);
 
 
-                } else {
-                    var menu = (response[0].data.menu);
-                    $(".menux").html("")
 
-                    var a;
-                    // console.log(menu);
-                    for (a=0;a<menu.length;a++) {
-                        var h = "";
-                        var link = (menu[a].link);
-                        var name = menu[a].name;
-                        // console.log(link);
-                        
-                        $(".menux").append(`
-                                <li class="nav-item">
-                                    <a href="${link}" class="nav-link font-bold upper">${name}</a>
-                                </li>
-                            `)
-                      
-
-                    
-                   }
-
-                     $(".homey").append(menu[0].name);
-
-                   
                 }
-                
-            
+                $(".homey").append(menu[0].name);
+
+
+            } else {
+                var menu = (response[0].data.menu);
+                $(".menux").html("")
+
+                var a;
+                // console.log(menu);
+                for (a = 0; a < menu.length; a++) {
+                    var h = "";
+                    var link = (menu[a].link);
+                    var name = menu[a].name;
+                    // console.log(link);
+
+                    $(".menux").append(`
+                                <li class="nav-item">
+                                    <a href="${link}" class="nav-link font-bold upper">${name}</a>
+                                </li>
+                            `)
+
+
+
+                }
+
+                $(".homey").append(menu[0].name);
+
+
+            }
+
+
         })
     })
 })
