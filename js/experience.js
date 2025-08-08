@@ -2,13 +2,23 @@
 var baseURL = "company-profile-firm"
 $.ajax({
     url: '/'+baseURL+'/js/experience.json',
-    //url: 'js/experience.json',
+    //url: "js/experience.json',
     method: 'GET',
     success: (response => {
         // console.log(response); 
         // var data = (response[0].data);
-        $(".subtitle, .subtitlex").html("")
-        var data = response[1].data;
+        setTimeout(() => {
+            var localS = (localStorage.getItem('lang'));
+            var indonesia = localS == "id";
+            var inggris = localS == "en";
+
+             var localS = (localStorage.getItem('lang'));
+            var indonesia = localS == "id";
+            var inggris = localS == "en";
+            $(".wrap-3-col").html("")
+            if (inggris) {
+                 $(".subtitle, .subtitlex").html("")
+            var data = response[1].data;
                 var a;
                 // console.log(data);
                 $(".subtitle, .subtitlex").html(response[1].title)
@@ -20,6 +30,41 @@ $.ajax({
                     </div>
                 `)
             }
+            }
+
+            else if(indonesia) {
+            $(".subtitle, .subtitlex").html("")
+            var data = response[0].data;
+                var a;
+                // console.log(data);
+                $(".subtitle, .subtitlex").html(response[0].title)
+                for (a = 0; a < data.length; a++) {
+                    var name = data[a].name;
+                    $(".wrap-3-col").append(`
+                    <div class="cardc">
+                        <h4>${name}</h4>
+                    </div>
+                `)
+            }
+            } else {
+                 $(".subtitle, .subtitlex").html("")
+            var data = response[0].data;
+                var a;
+                // console.log(data);
+                $(".subtitle, .subtitlex").html(response[1].title)
+                for (a = 0; a < data.length; a++) {
+                    var name = data[a].name;
+                    $(".wrap-3-col").append(`
+                    <div class="cardc">
+                        <h4>${name}</h4>
+                    </div>
+                `)
+            }
+
+            }
+        
+        },10)
+        
         $(".click-flag").click(function () {
             var localS = (localStorage.getItem('lang'));
             var indonesia = localS == "id";

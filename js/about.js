@@ -2,12 +2,17 @@ var baseURL = "company-profile-firm"
 
 $.ajax({
     url: '/'+baseURL+'/js/about.json',
-    //url: 'js/about.json',
+    //url: "js/about.json',
     method: 'GET',
     success: (response=>{
         // console.log(response);
         $(".subtitle .dedix,.subtitlex,.about-para,.quotes").html("");
-
+        setTimeout(() => {
+            var localS = (localStorage.getItem('lang'));
+            var indonesia = localS == "id";
+            var inggris = localS == "en";
+        
+        },10)
            $(".about-para").html("")
                     $(".quotes").html("")
                     var data = (response[1].data);

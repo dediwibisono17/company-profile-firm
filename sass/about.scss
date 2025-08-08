@@ -46,6 +46,9 @@
                     width: 100%;
                     font-size: 1.1rem;
                     color: #777;
+                    &:first-child {
+                        margin-top: 0;
+                    }
                 }
             }
             .text {

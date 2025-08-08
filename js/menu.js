@@ -5,7 +5,7 @@ $.ajax({
     // url: "js/menu.json",
     method: 'GET',
     success: (response => {
-        console.log(response);
+        // console.log(response);
         // console.log(window.location.pathname);
         // var path = window.location.pathname;
         // var splitPath = path.slice(1,6);
@@ -23,7 +23,33 @@ $.ajax({
             if (inggris) {
                 console.log("inggris", inggris);
                 var menu = (response[1].data.menu);
-                $(".menux").html("")
+                $(".menux").html("");
+
+                // var footer = response[1].data.footer.kontak.whatsapp;
+                // var x;
+                // console.log(footer);
+                // $(".whatsappx").html("")
+                // for(x=0; x<footer.length;x++) {
+                //     var no = footer[x].no;
+                //     var text = footer[x].text;
+                //     // console.log('cekwa',cekwa);
+                //     var z;
+
+                //     $(".whatsappx").append(`
+                //         <li>
+                //             <a
+                //                 href="${text}&phone=${no}">
+                //                 <i class="fab fa-whatsapp"></i>
+                //                 <small>Admin 1</small>
+                //             </a>
+                //         </li>
+                      
+                      
+                        
+                //         `)
+
+                    
+                // }
 
                 var a;
                 // console.log(menu);
@@ -31,6 +57,7 @@ $.ajax({
                     var h = "";
                     var link = (menu[a].link);
                     var name = menu[a].name;
+                    
                     // console.log(link);
 
                     $(".menux").append(`
@@ -106,7 +133,7 @@ $.ajax({
                 $(".homey").append(menu[1].name);
             }
 
-        }, 1000)
+        }, 10)
 
 
 
@@ -119,6 +146,14 @@ $.ajax({
             $(".homey").html("")
 
             if (inggris) {
+                var footer = response[1].data.footer;
+                var x;
+                for(x=0; x<footer.length;x++) {
+                    var cekwa = footer[x].whatsapp;
+                    console.log('cekwa',cekwa);
+                    
+                }
+
                 var menu = (response[1].data.menu);
 
                 $(".menux").html("")
