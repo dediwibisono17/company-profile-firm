@@ -2,6 +2,7 @@
   {
     "lang": "id",
     "title": "Profil Advokat",
+    "selengkap":"Selengkapnya",
     "data": [
       {
         "id": 1,
@@ -56,6 +57,7 @@
   {
     "lang": "en",
     "title": "Advocate Profiles",
+    "selengkap":"Details",
     "data": [
       {
         "id": 1,

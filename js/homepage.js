@@ -730,7 +730,7 @@ $.ajax({
             <h3>${judul}</h3>
                             <p>${exp}</p>
                             <a href="profile.html" class="color-primary">
-                                <b>Selengkapnya</b>
+                                <b>${response[1].selengkap}</b>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
             `)
@@ -766,7 +766,7 @@ $.ajax({
             <h3>${judul}</h3>
                             <p>${exp}</p>
                             <a href="profile.html" class="color-primary">
-                                <b>Selengkapnya</b>
+                                <b>${response[0].selengkap}</b>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
             `)
@@ -781,6 +781,7 @@ $.ajax({
             var title = profiles.title;
             var image = profiles.image;
             var exp = profiles.exp;
+            
             $(".left-side").append(`
             <h4 class="color-primary">
                 <i class="fas fa-user"></i>
@@ -798,12 +799,12 @@ $.ajax({
                 </div>
             </div>
             `);
-
+            $(".right-side b").html("")
             $('.right-side').append(`
             <h3>${judul}</h3>
                             <p>${exp}</p>
                             <a href="profile.html" class="color-primary">
-                                <b>Selengkapnya</b>
+                                <b>${response[1].selengkap}</b>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
             `)
@@ -852,7 +853,7 @@ $.ajax({
             <h3>${judul}</h3>
                             <p>${exp}</p>
                             <a href="profile.html" class="color-primary">
-                                <b>Selengkapnya</b>
+                                <b>${response[1].selengkap}</b>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
             `)
@@ -889,7 +890,7 @@ $.ajax({
             <h3>${judul}</h3>
                             <p>${exp}</p>
                             <a href="profile.html" class="color-primary">
-                                <b>Selengkapnya</b>
+                                <b>${response[0].selengkap}</b>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
             `)
