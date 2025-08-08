@@ -2,14 +2,14 @@ var baseURL = "company-profile-firm";
 
 $.ajax({
     url: '/'+baseURL+'/js/menu.json',
-    // url: "js/menu.json",
+    //url: "js/menu.json",
     method: 'GET',
     success: (response => {
-        // console.log(response);
-        // console.log(window.location.pathname);
+        // //console.log(response);
+        // //console.log(window.location.pathname);
         // var path = window.location.pathname;
         // var splitPath = path.slice(1,6);
-        // console.log(splitPath);
+        // //console.log(splitPath);
 
 
 
@@ -21,44 +21,51 @@ $.ajax({
             $(".homey").html("")
 
             if (inggris) {
-                console.log("inggris", inggris);
+                //console.log("inggris", inggris);
                 var menu = (response[1].data.menu);
                 $(".menux").html("");
 
-                // var footer = response[1].data.footer.kontak.whatsapp;
-                // var x;
-                // console.log(footer);
-                // $(".whatsappx").html("")
-                // for(x=0; x<footer.length;x++) {
-                //     var no = footer[x].no;
-                //     var text = footer[x].text;
-                //     // console.log('cekwa',cekwa);
-                //     var z;
+                var footer = response[1].data.footer.kontak.whatsapp;
+                var x;
+                //console.log(footer);
+                $(".whatsappx").html("")
+                $(".footer-whatsapp").html("")
+                //whatsapp header
+                for (x = 0; x < footer.length; x++) {
+                    var no = footer[x].no;
+                    var text = footer[x].text;
+                    // //console.log('cekwa',cekwa);
+                    var z;
 
-                //     $(".whatsappx").append(`
-                //         <li>
-                //             <a
-                //                 href="${text}&phone=${no}">
-                //                 <i class="fab fa-whatsapp"></i>
-                //                 <small>Admin 1</small>
-                //             </a>
-                //         </li>
+                    $(".whatsappx").append(`
+                        <li>
+                            <a
+                                href="${text}&phone=${no}">
+                                <i class="fab fa-whatsapp"></i>
+                                <small>Admin ${x + 1}</small>
+                            </a>
+                        </li>
                       
                       
                         
-                //         `)
+                        `)
 
-                    
-                // }
+                        $(".footer-whatsapp").append(`
+                            <a href="${text}&phone=${no}">${no}</a>
+                        `)
+
+
+                }
 
                 var a;
-                // console.log(menu);
+                // //console.log(menu);
+                //menu
                 for (a = 0; a < menu.length; a++) {
                     var h = "";
                     var link = (menu[a].link);
                     var name = menu[a].name;
-                    
-                    // console.log(link);
+
+                    // //console.log(link);
 
                     $(".menux").append(`
                                 <li class="nav-item">
@@ -69,22 +76,67 @@ $.ajax({
 
 
                 }
+
+                //footer
+                $(".alamatx").html("");
+                $(".kontakx").html("");
+                $(".lokasikamix").html("")
+
+                $(".alamatx").append(response[1].data.footer.name1)
+                $(".kontakx").append(response[1].data.footer.name2)
+                $(".lokasikamix").append(response[1].data.footer.name3)
+
+
+
+
 
                 $(".homey").append(menu[0].name);
 
             }
             else if (indonesia) {
-                console.log("indonesia", indonesia);
+                // //console.log("indonesia", indonesia);
                 var menu = (response[0].data.menu);
-                $(".menux").html("")
+                $(".menux").html("");
+
+                var footer = response[0].data.footer.kontak.whatsapp;
+                var x;
+                // //console.log(footer);
+                $(".whatsappx").html("")
+                $(".footer-whatsapp").html("")
+                //whatsapp header
+                for (x = 0; x < footer.length; x++) {
+                    var no = footer[x].no;
+                    var text = footer[x].text;
+                    // //console.log('cekwa',cekwa);
+                    var z;
+
+                    $(".whatsappx").append(`
+                        <li>
+                            <a
+                                href="${text}&phone=${no}">
+                                <i class="fab fa-whatsapp"></i>
+                                <small>Admin ${x + 1}</small>
+                            </a>
+                        </li>
+                      
+                      
+                        
+                        `)
+
+                        $(".footer-whatsapp").append(`
+                            <a href="${text}&phone=${no}">${no}</a>
+                        `)
+
+
+                }
 
                 var a;
-                // console.log(menu);
+                // //console.log(menu);
                 for (a = 0; a < menu.length; a++) {
                     var h = "";
                     var link = (menu[a].link);
                     var name = menu[a].name;
-                    // console.log(link);
+                    // //console.log(link);
 
                     $(".menux").append(`
                                 <li class="nav-item">
@@ -96,17 +148,57 @@ $.ajax({
 
                 }
 
+                $(".alamatx").html("");
+                $(".kontakx").html("");
+                $(".lokasikamix").html("")
+
+                $(".alamatx").append(response[0].data.footer.name1)
+                $(".kontakx").append(response[0].data.footer.name2)
+                $(".lokasikamix").append(response[0].data.footer.name3)
+
                 $(".homey").append(menu[0].name);
             } else {
                 var menu = (response[1].data.menu);
 
+                var footer = response[1].data.footer.kontak.whatsapp;
+                var x;
+                //console.log(footer);
+               $(".whatsappx").html("")
+                $(".footer-whatsapp").html("")
+                //whatsapp header
+                for (x = 0; x < footer.length; x++) {
+                    var no = footer[x].no;
+                    var text = footer[x].text;
+                    // //console.log('cekwa',cekwa);
+                    var z;
+
+                    $(".whatsappx").append(`
+                        <li>
+                            <a
+                                href="${text}&phone=${no}">
+                                <i class="fab fa-whatsapp"></i>
+                                <small>Admin ${x + 1}</small>
+                            </a>
+                        </li>
+                      
+                      
+                        
+                        `)
+
+                        $(".footer-whatsapp").append(`
+                            <a href="${text}&phone=${no}">${no}</a>
+                        `)
+
+
+                }
+
                 var a;
-                // console.log(menu);
+                // //console.log(menu);
                 for (a = 0; a < menu.length; a++) {
                     var h = "";
                     var link = (menu[a].link);
                     var name = menu[a].name;
-                    console.log(link);
+                    //console.log(link);
                     var logo = `
                 <li class="nav-item isdesktop">
                                 <a href="/company-profile-firm">
@@ -130,6 +222,14 @@ $.ajax({
 
 
                 }
+
+                $(".alamatx").html("");
+                $(".kontakx").html("");
+                $(".lokasikamix").html("")
+
+                $(".alamatx").append(response[1].data.footer.name1)
+                $(".kontakx").append(response[1].data.footer.name2)
+                $(".lokasikamix").append(response[1].data.footer.name3)
                 $(".homey").append(menu[1].name);
             }
 
@@ -148,22 +248,53 @@ $.ajax({
             if (inggris) {
                 var footer = response[1].data.footer;
                 var x;
-                for(x=0; x<footer.length;x++) {
+                for (x = 0; x < footer.length; x++) {
                     var cekwa = footer[x].whatsapp;
-                    console.log('cekwa',cekwa);
-                    
+                    //console.log('cekwa', cekwa);
+
                 }
 
                 var menu = (response[1].data.menu);
+                var footer = response[1].data.footer.kontak.whatsapp;
+                var x;
+                //console.log(footer);
+                $(".whatsappx").html("")
+                $(".footer-whatsapp").html("")
+                //whatsapp header
+                for (x = 0; x < footer.length; x++) {
+                    var no = footer[x].no;
+                    var text = footer[x].text;
+                    // //console.log('cekwa',cekwa);
+                    var z;
+
+                    $(".whatsappx").append(`
+                        <li>
+                            <a
+                                href="${text}&phone=${no}">
+                                <i class="fab fa-whatsapp"></i>
+                                <small>Admin ${x + 1}</small>
+                            </a>
+                        </li>
+                      
+                      
+                        
+                        `)
+
+                        $(".footer-whatsapp").append(`
+                            <a href="${text}&phone=${no}">${no}</a>
+                        `)
+
+
+                }
 
                 $(".menux").html("")
                 var a;
-                // console.log(menu);
+                // //console.log(menu);
                 for (a = 0; a < menu.length; a++) {
                     var h = "";
                     var link = (menu[a].link);
                     var name = menu[a].name;
-                    // console.log(link);
+                    // //console.log(link);
 
                     $(".menux").append(`
                                 <li class="nav-item">
@@ -174,20 +305,59 @@ $.ajax({
 
 
                 }
+
+                $(".alamatx").html("");
+                $(".kontakx").html("");
+                $(".lokasikamix").html("")
+
+                $(".alamatx").append(response[1].data.footer.name1)
+                $(".kontakx").append(response[1].data.footer.name2)
+                $(".lokasikamix").append(response[1].data.footer.name3)
                 $(".homey").append(menu[0].name);
 
 
             } else {
                 var menu = (response[0].data.menu);
                 $(".menux").html("")
+                var footer = response[0].data.footer.kontak.whatsapp;
+                var x;
+                //console.log(footer);
+                 $(".whatsappx").html("")
+                $(".footer-whatsapp").html("")
+                //whatsapp header
+                for (x = 0; x < footer.length; x++) {
+                    var no = footer[x].no;
+                    var text = footer[x].text;
+                    // //console.log('cekwa',cekwa);
+                    var z;
+
+                    $(".whatsappx").append(`
+                        <li>
+                            <a
+                                href="${text}&phone=${no}">
+                                <i class="fab fa-whatsapp"></i>
+                                <small>Admin ${x + 1}</small>
+                            </a>
+                        </li>
+                      
+                      
+                        
+                        `)
+
+                        $(".footer-whatsapp").append(`
+                            <a href="${text}&phone=${no}">${no}</a>
+                        `)
+
+
+                }
 
                 var a;
-                // console.log(menu);
+                // //console.log(menu);
                 for (a = 0; a < menu.length; a++) {
                     var h = "";
                     var link = (menu[a].link);
                     var name = menu[a].name;
-                    // console.log(link);
+                    // //console.log(link);
 
                     $(".menux").append(`
                                 <li class="nav-item">
@@ -198,6 +368,14 @@ $.ajax({
 
 
                 }
+
+                $(".alamatx").html("");
+                $(".kontakx").html("");
+                $(".lokasikamix").html("")
+
+                $(".alamatx").append(response[0].data.footer.name1)
+                $(".kontakx").append(response[0].data.footer.name2)
+                $(".lokasikamix").append(response[0].data.footer.name3)
 
                 $(".homey").append(menu[0].name);
 

@@ -2,7 +2,7 @@ var baseURL = "company-profile-firm"
 
 $.ajax({
     url: '/'+baseURL+'/js/homepage.json',
-    //url: "js/homepage.json',
+    //url: "js/homepage.json",
     method: 'GET',
     success: (response => {
         // console.log(response);
@@ -21,7 +21,7 @@ $.ajax({
                 var title = (data[a].title);
                 var bumper = data[a].image;
                 var subtitle = data[a].subtitle
-                console.log("slider", title);
+                // console.log("slider", title);
 
                 $(".sliderx").append(`
                     <div class="datax">
@@ -51,7 +51,7 @@ $.ajax({
             $(".pengalaman-kami").html("")
             var juduls = response[1].beberapa
             var ttg = response[1].pengalaman
-            console.log(juduls);
+            // console.log(juduls);
 
             $(".beberapa-kasus").append(juduls)
             $(".pengalaman-kami").append(ttg)
@@ -83,7 +83,7 @@ $.ajax({
                 var title = (data[a].title);
                 var bumper = data[a].image;
                 var subtitle = data[a].subtitle
-                console.log("slider", title);
+                // console.log("slider", title);
 
                 $(".sliderx").append(`
                     <div class="datax">
@@ -113,7 +113,7 @@ $.ajax({
             $(".pengalaman-kami").html("")
             var juduls = response[0].beberapa
             var ttg = response[0].pengalaman
-            console.log(juduls);
+            // console.log(juduls);
 
             $(".beberapa-kasus").append(juduls)
             $(".pengalaman-kami").append(ttg)
@@ -145,7 +145,7 @@ $.ajax({
                 var title = (data[a].title);
                 var bumper = data[a].image;
                 var subtitle = data[a].subtitle
-                console.log("slider", title);
+                // console.log("slider", title);
 
                 $(".sliderx").append(`
                     <div class="datax">
@@ -175,7 +175,7 @@ $.ajax({
             $(".pengalaman-kami").html("")
             var juduls = response[1].beberapa
             var ttg = response[1].pengalaman
-            console.log(juduls);
+            // console.log(juduls);
 
             $(".beberapa-kasus").append(juduls)
             $(".pengalaman-kami").append(ttg)
@@ -222,7 +222,7 @@ $.ajax({
                     var bumper = data[a].image;
                     var subtitle = data[a].subtitle
 
-                    console.log("slider", title);
+                    // console.log("slider", title);
                     $(".sliderx").append(`
                     <div class="datax">
                      <div class="datax__image">
@@ -256,7 +256,7 @@ $.ajax({
                 $(".pengalaman-kami").html("")
                 var juduls = response[1].beberapa
                 var ttg = response[1].pengalaman
-                console.log(juduls);
+                // console.log(juduls);
 
                 $(".beberapa-kasus").append(juduls)
                 $(".pengalaman-kami").append(ttg)
@@ -319,7 +319,7 @@ $.ajax({
                 $(".pengalaman-kami").html("")
                 var juduls = response[0].beberapa
                 var ttg = response[0].pengalaman
-                console.log(juduls);
+                // console.log(juduls);
 
                 $(".beberapa-kasus").append(juduls)
                 $(".pengalaman-kami").append(ttg)
@@ -349,7 +349,7 @@ $.ajax({
 //usp
 $.ajax({
     url: '/'+baseURL+'/js/why.json',
-    //url: "js/why.json',
+    //url: "js/why.json",
     method: "GET",
     success: (response => {
         // console.log(response);
@@ -440,7 +440,7 @@ $.ajax({
 //about 
 $.ajax({
     url: '/'+baseURL+'/js/about.json',
-    //url: "js/about.json',
+    //url: "js/about.json",
     method: "GET",
     success: (response => {
         var localS = (localStorage.getItem('lang'));
@@ -505,7 +505,7 @@ $.ajax({
                 var desc = data[a].desc;
                 var visi = data[a].visi;
                 var misi = data[a].misi;
-                console.log(aboutus);
+                // console.log(aboutus);
 
 
                 $(".aboutus").html(aboutus)
@@ -548,7 +548,7 @@ $.ajax({
                 var desc = data[a].desc;
                 var visi = data[a].visi;
                 var misi = data[a].misi;
-                console.log(aboutus);
+                // console.log(aboutus);
 
 
                 $(".aboutus").html(aboutus)
@@ -604,7 +604,7 @@ $.ajax({
                     var visi = data[a].visi;
                     var misi = data[a].misi;
 
-                    console.log(aboutus, 'ing');
+                    // console.log(aboutus, 'ing');
 
                     // console.log(aboutus);
 
@@ -650,7 +650,8 @@ $.ajax({
                     var desc = data[a].desc;
                     var visi = data[a].visi;
                     var misi = data[a].misi;
-                    console.log(aboutus, 'id');
+                    // console.log(aboutus, 'id');
+
 
 
                     $(".aboutus").html(aboutus)
@@ -689,7 +690,7 @@ $.ajax({
 //profile
 $.ajax({
     url: '/'+baseURL+'/js/profile.json',
-    // url: "js/profile.json",
+    //url: "js/profile.json",
     method: "GET",
     success: (response => {
 
@@ -826,7 +827,7 @@ $.ajax({
                 // console.log(judul);
 
                 var profiles = (response[1].data[0]);
-                console.log(profiles);
+                // console.log(profiles);
                 var nama = profiles.name;
                 var title = profiles.title;
                 var image = profiles.image;
@@ -863,7 +864,7 @@ $.ajax({
                 // console.log(judul);
 
                 var profiles = (response[0].data[0]);
-                console.log(profiles);
+                // console.log(profiles);
                 var nama = profiles.name;
                 var title = profiles.title;
                 var image = profiles.image;

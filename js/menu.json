@@ -31,17 +31,20 @@
             "footer": {
                 "logo": "img/logo.png",
                 "alamat": "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+                 "name1": "Alamat",
+                "name2": "Kontak",
+                "name3":"Lokasi kami",
                 "kontak": {
                     "telepon": "(021) 5682703",
                     "email": "info@forseti.id",
                     "whatsapp": [
                         {
-                            "no": "081311609187",
-                            "text":"https://api.whatsapp.com/send?text=Welcome%20to%20Forseti%20Law%20Office%0D%0a %0aSaya ingin konsultasi tentang%20&phone=6281311609187"
+                            "no": "6281311609187",
+                            "text":"https://api.whatsapp.com/send?text=Selamat datang di Forseti Law Office %0D%0A Terima kasih sudah hubungi Hendrawan Agusta! Tolong jelaskan kepada kami apa yang bisa dibantu"
                         }, 
                         {
-                            "no":"087832044565",
-                            "text":"https://api.whatsapp.com/send?text=Welcome%20to%20Forseti%20Law%20Office%0D%0a %0aSaya ingin konsultasi tentang%20&phone=6281311609187"
+                            "no":"6287832044565",
+                            "text":"https://api.whatsapp.com/send?text=Selamat datang di Forseti Law Office %0D%0A Terima kasih sudah hubungi Iman Nul Islam Nudirman! Tolong jelaskan kepada kami apa yang bisa dibantu"
                         }
                         
                     ]
@@ -81,17 +84,20 @@
             "footer": {
                 "logo": "img/logo.png",
                 "alamat": "Epicentrum Walk, Jl. H. R. Rasuna Said No.529A Lt.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+                "name1": "Address",
+                "name2": "Contact",
+                "name3": "Our Location",
                 "kontak": {
                     "telepon": "(021) 5682703",
                     "email": "info@forseti.id",
                     "whatsapp": [
                         {
-                            "no": "081311609187",
-                            "text":"https://api.whatsapp.com/send?text=Welcome%20to%20Forseti%20Law%20Office%0D%0a %0aSaya ingin konsultasi tentang%20&phone=6281311609187"
+                            "no": "6281311609187",
+                            "text":"https://api.whatsapp.com/send?text=Welcome to Forseti Law Office %0D%0a Thank you for contacting Hendrawan Agusta! Please let us know how we can help you"
                         }, 
                         {
-                            "no":"087832044565",
-                            "text":"https://api.whatsapp.com/send?text=Welcome to Forseti Law Office Thank you for contacting Hendrawan Agusta! Please let us know how we can help you&phone=6281311609187"
+                            "no":"6287832044565",
+                            "text":"https://api.whatsapp.com/send?text=Welcome to Forseti Law Office %0D%0a Thank you for contacting Iman Nul Islam Nudirman! Please let us know how we can help you"
                         }
                         
                     ]
