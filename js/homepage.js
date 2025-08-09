@@ -353,7 +353,13 @@ $.ajax({
     method: "GET",
     success: (response => {
         // console.log(response);
-        var prestasix = response[1].usp;
+         var localS = (localStorage.getItem('lang'));
+            var indonesia = localS == "id";
+            var inggris = localS == "en";
+            $(".usp .container").html("");
+
+            if (inggris) {
+                var prestasix = response[1].usp;
         for (q = 0; q < prestasix.length; q++) {
             // console.log(prestasix[q]);
             var icon = prestasix[q].icon;
@@ -376,6 +382,58 @@ $.ajax({
                     </div>
                 `)
         }
+            }
+            else if (indonesia) {
+                var prestasix = response[0].usp;
+        for (q = 0; q < prestasix.length; q++) {
+            // console.log(prestasix[q]);
+            var icon = prestasix[q].icon;
+            var title = prestasix[q].title;
+            var desc = prestasix[q].desc;
+
+            $(".usp .container").append(`
+                    <div class="rectanglex">
+                        <div class="d-block">
+                            <div class="rectanglex__icon">
+                                ${icon}
+                            </div>
+                            <div class="rectanglex__right">
+                                <h3>${title}</h3>
+                                <p>
+                                    ${desc}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `)
+        }
+
+            } else {
+var prestasix = response[1].usp;
+        for (q = 0; q < prestasix.length; q++) {
+            // console.log(prestasix[q]);
+            var icon = prestasix[q].icon;
+            var title = prestasix[q].title;
+            var desc = prestasix[q].desc;
+
+            $(".usp .container").append(`
+                    <div class="rectanglex">
+                        <div class="d-block">
+                            <div class="rectanglex__icon">
+                                ${icon}
+                            </div>
+                            <div class="rectanglex__right">
+                                <h3>${title}</h3>
+                                <p>
+                                    ${desc}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `)
+        }
+            }
+        
 
         $(".click-flag").click(function () {
             var localS = (localStorage.getItem('lang'));
