@@ -14,28 +14,28 @@
             }
         ],
         "selengkap":"Selengkapnya",
-        "beberapa": "Beberapa Kasus yang Kami Tangani",
+        "beberapa": "5 Bidang Perkara Utama Forseti Law Office",
         "pengalaman": "Pengalaman Kami",
         "kasus": [
             {
-                "parent": "Perkara Perorangan",
-                "name": "Berbagai perkara di bidang hukum keluarga, perceraian, ahli waris, dan lain-lain"
+                "parent": "Hukum Perdata Bisnis (Hukum Perusahaan, Fintech Lending, Legal Due Diligence, Legal Opinion, PKPU dan Kepailitan).",
+                "name": ""
             },
             {
-                "parent": "Sengketa",
-                "name": "Berbagai Perkara Terkait Sengketa Tanah, baik Gugatan Perdata maupun Pidana"
+                "parent": "Hukum Pidana (Hukum Pidana Umum dan Hukum Khusus).",
+                "name": ""
             },
             {
-                "parent": "Legal Due Diligence",
-                "name": "Melakukan Legal Due Diligence dalam Rangka Akuisisi"
+                "parent": "Hukum Pertanahan.",
+                "name": ""
             },
             {
-                "parent": "Perkara hukum di perpajakan",
-                "name": "Pengurusan sengketa pajak di kantor pajak, kantor wilayah dan pengadilan pajak"
+                "parent": "Hukum Perlindungan Konsumen.",
+                "name": ""
             },
             {
-                "parent": "Sengketa Konsumen",
-                "name": "Sengketa Konsumen"
+                "parent": "Arbitrase.",
+                "name": ""
             }
         ]
     },
@@ -54,37 +54,37 @@
             }
         ],
         "selengkap":"Details",
-        "beberapa": "Some of the Cases We Handled",
+        "beberapa": "5 Main Areas of Practice at Forseti Law Office",
         "pengalaman": "Our Experience",
         "kasus": [
             {
-                "parent": "Individual Cases",
+                "parent": "⁠Business Civil Law (Corporate Law, Fintech Lending, Legal Due Diligence, Legal Opinion, Suspension of Debt Payment Obligations and Bankruptcy).",
                 "name": [
-                    "Individual cases in family law, such as divorce, inheritance, etc."
+                    ""
                 ]
             },
             {
-                "parent": "Disputes",
+                "parent": "Criminal Law (General Criminal Law and Special Criminal Law).",
                 "name": [
-                    "Land disputes (civil and criminal)"
+                    ""
                 ]
             },
             {
-                "parent": "Legal Due Diligence",
+                "parent": "Land Law",
                 "name": [
-                    "Legal due diligence for acquisition"
+                    ""
                 ]
             },
             {
-                "parent": "Tax Law Cases",
+                "parent": "Consumer Protection Law.",
                 "name": [
-                    "Audit assistance, objections, appeals, investigations, judicial reviews"
+                    ""
                 ]
             },
             {
-                "parent": "Consumer Disputes",
+                "parent": "Arbitration",
                 "name": [
-                    "Consumer disputes"
+                    ""
                 ]
             }
         ]
