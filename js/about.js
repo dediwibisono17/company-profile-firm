@@ -4,6 +4,14 @@ $.ajax({
     url: '/'+baseURL+'/js/about.json',
     //url: "js/about.json",
     method: 'GET',
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response=>{
         // console.log(response);
         $(".subtitle .dedix,.subtitlex,.about-para,.quotes").html("");

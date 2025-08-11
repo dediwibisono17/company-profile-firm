@@ -4,6 +4,14 @@ $.ajax({
     url: '/'+baseURL+'/js/experience.json',
     //url: "js/experience.json",
     method: 'GET',
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
         // console.log(response); 
         // var data = (response[0].data);

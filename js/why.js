@@ -12,6 +12,14 @@ $.ajax({
     url: '/'+baseURL+'/js/why.json',
     //url: "js/why.json",
     method: 'GET',
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
 
         setTimeout(() => {

@@ -2,8 +2,16 @@ var baseURL = "company-profile-firm"
 
 $.ajax({
     url: '/'+baseURL+'/js/homepage.json',
-    //url: "js/homepage.json",
+    // url: "js/homepage.json",
     method: 'GET',
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
         // console.log(response);
         var localS = (localStorage.getItem('lang'));
@@ -349,8 +357,16 @@ $.ajax({
 //usp
 $.ajax({
     url: '/'+baseURL+'/js/why.json',
-    //url: "js/why.json",
+    // url: "js/why.json",
     method: "GET",
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
         // console.log(response);
          var localS = (localStorage.getItem('lang'));
@@ -498,8 +514,16 @@ var prestasix = response[1].usp;
 //about 
 $.ajax({
     url: '/'+baseURL+'/js/about.json',
-    //url: "js/about.json",
+    // url: "js/about.json",
     method: "GET",
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
         var localS = (localStorage.getItem('lang'));
         var indonesia = localS == "id";
@@ -748,8 +772,16 @@ $.ajax({
 //profile
 $.ajax({
     url: '/'+baseURL+'/js/profile.json',
-    //url: "js/profile.json",
+    // url: "js/profile.json",
     method: "GET",
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
 
         var localS = (localStorage.getItem('lang'));

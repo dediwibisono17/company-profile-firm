@@ -4,6 +4,14 @@ $.ajax({
     url: '/'+baseURL+'/js/contact.json',
     //url: "js/contact.json",
     method: 'GET',
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
 
 

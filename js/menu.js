@@ -4,6 +4,14 @@ $.ajax({
     url: '/'+baseURL+'/js/menu.json',
     //url: "js/menu.json",
     method: 'GET',
+    beforeSend: function(){
+            $("#loading").show();
+            // $('.thumbs').hide();
+        },
+        complete: function(){
+            $("#loading").hide();
+            // $('.thumbs').show();
+        },
     success: (response => {
         // //console.log(response);
         // //console.log(window.location.pathname);
