@@ -546,7 +546,7 @@ $.ajax({
                 var misi = data[a].misi;
                 var visi_title = data[a].visi_title;
                 var misi_title = data[a].misi_title;
-                console.log(aboutus);
+                // console.log(aboutus);
 
 
                 $(".aboutus").html(aboutus)
@@ -691,6 +691,9 @@ $.ajax({
                     var desc = data[a].desc;
                     var visi = data[a].visi;
                     var misi = data[a].misi;
+                    var visi_title = data[a].visi_title;
+                    var misi_title = data[a].misi_title;
+                    
 
                     // console.log(aboutus, 'ing');
 
@@ -703,7 +706,7 @@ $.ajax({
                 <li>
                     <div class="abcontent">
                         <div class="text">
-                            <h3>Visi</h3>
+                            <h3>${visi_title}</h3>
                             <p>
                                ${visi}
                             </p>
@@ -713,7 +716,7 @@ $.ajax({
                 <li>
                     <div class="abcontent">
                         <div class="text">
-                            <h3>Misi</h3>
+                            <h3>${misi_title}</h3>
                             <ul>
                                 ${misi}
                             </ul>
@@ -738,6 +741,8 @@ $.ajax({
                     var desc = data[a].desc;
                     var visi = data[a].visi;
                     var misi = data[a].misi;
+                    var visi_title = data[a].visi_title;
+                    var misi_title = data[a].misi_title;
                     // console.log(aboutus, 'id');
 
 
@@ -748,7 +753,7 @@ $.ajax({
                 <li>
                     <div class="abcontent">
                         <div class="text">
-                            <h3>Visi</h3>
+                            <h3>${visi_title}</h3>
                             <p>
                                ${visi}
                             </p>
@@ -758,7 +763,7 @@ $.ajax({
                 <li>
                     <div class="abcontent">
                         <div class="text">
-                            <h3>Misi</h3>
+                            <h3>${misi_title}</h3>
                             <ul>
                                 ${misi}
                             </ul>
