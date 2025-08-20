@@ -5,7 +5,7 @@
             "menu": [
                 {
                     "name":"Beranda",
-                    "link":"/company-profile-firm"
+                    "link":"/"
                 },
                 {
                     "name":"Tentang Kami",
